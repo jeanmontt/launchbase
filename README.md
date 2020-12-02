@@ -13,7 +13,7 @@
   </a>
 
   <a href="https://github.com/jeanmontt/desafios-launchbase-bootcamp/commits/master" >
-    <img alt="Last commit" src="https://img.shields.io/github/last-commit/jeanmontt/desafios-launchbase-bootcamp">
+    <img alt="Last commit" src="https://img.shields.io/github/last-commit/jeanmontt/launchbase">
   </a>
 
 </p>
