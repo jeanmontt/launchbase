@@ -36,7 +36,7 @@
 - [Aplicação: Operações bancárias](https://github.com/jeanmontt/launchbase/tree/master/fase_02/01_introducao_programacao_web/desafio_01-4_aplicacao-operacoes-bancarias) ✔️
 
 2. [Iniciando no Front-end:](https://github.com/jeanmontt/launchbase/tree/master/fase_02/02_iniciando_front_end)
-- [Primeiro HTML](#) 🚧️
+- [Primeiro HTML](https://github.com/jeanmontt/launchbase/tree/master/fase_02/02_iniciando_front_end/desafio_02-1_primeiro-html) ✔️
 - [Página descrição](#) 🚧️
 - [Página cursos e iframe](#) 🚧️
 

@@ -28,7 +28,7 @@
 
 ## :rocket: Desafios
 
-- [Primeiro HTML](https://github.com/jeanmontt/launchbase/tree/master/fase_02/02_iniciando_front_end/desafio_02-1_primeiro-html) 🚧️
+- [Primeiro HTML](https://github.com/jeanmontt/launchbase/tree/master/fase_02/02_iniciando_front_end/desafio_02-1_primeiro-html) ✔️
 - [Página de descrição](#) 🚧️
 - [Página de cursos e iframe](#) 🚧️
 - [Construindo Foodfy](#) 🚧️
