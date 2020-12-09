@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  Desafios Módulo 2 - Iniciando no Front-end
+  Desafios Módulo 3 - Iniciando no Back-end
 </h3>
 
 <blockquote align="center">“Faça seu melhor, mas sempre com prazo de entrega!”</blockquote>
@@ -21,17 +21,17 @@
 </p>
 
 <p align="center">
-  <a href="#rocket-desafios">Desafios</>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-desafios">Desafios</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#calendar-entrega">Entrega</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
   <a href="#memo-licença">Licença</a>
 </p>
 
 ## :rocket: Desafios
 
-- [Primeiro HTML](https://github.com/jeanmontt/launchbase/tree/master/fase_02/02_iniciando_front_end/desafio_02-1_primeiro-html) ✔️
-- [Página de descrição](https://github.com/jeanmontt/launchbase/tree/master/fase_02/02_iniciando_front_end/desafio_02-2_pagina-descricao) ✔️
-- [Página de conteúdos e iframe](https://github.com/jeanmontt/launchbase/tree/master/fase_02/02_iniciando_front_end/desafio_02-3_pagina-posts-e-iframe) ✔️
-- [Construindo Foodfy](https://github.com/jeanmontt/foodfy/tree/master/01_challenge-building-foodfy) ✔️
+- [Primeiro servidor](https://github.com/jeanmontt/launchbase/tree/master/fase_02/03_inciando_back_end/desafio_03-1_primeiro-servidor) ✔️
+- [Arquivos nunjucks e dados dinâmicos](#) 🚧️
+- [Página de descrição do curso](#) 🚧️
+- [Refatorando Foodfy](#) 🚧️
 
 ## :calendar: Entrega
 
