@@ -61,7 +61,32 @@
 - [Listagem de professores](#) 🚧️
 - [Estruturando estudantes](#) 🚧️
 
-#### - Challenge: Admin Foodfy 👨‍🍳️ 🚧️
+#### [- Challenge: Admin Foodfy)(#) 👨‍🍳️ 🚧️
+
+5. [Persistindo dados da aplicação](#) 🚧️
+- [Refatorando aplicação e configurando o BD](#) 🚧️
+- [Interagindo com o BD](#) 🚧️
+- [Relacionamentos e filtros no BD](#) 🚧️
+- [Paginação de resultados no BD](#) 🚧️
+
+#### [- Challenge: Persistindo Dados do Foodfy)(#) 👨‍🍳️ 🚧️
+
+#### [Fase 04](#) 🚧️
+
+6. [Launchstore](#) 🚧️
+- [Mini desafios](#) 🚧️
+
+#### [- Challenge: Upload de Imagens)(#) 👨‍🍳️ 🚧️
+
+#### [- Challenge: Apresentação e Organização das Receitas no Foodfy)(#) 👨‍🍳️ 🚧️
+
+#### [- Challenge: Sistema de Login Foodfy)(#) 👨‍🍳️ 🚧️
+
+#### [Fase 05](#) 🚧️
+
+6. [NodeJS Avançado](#) 🚧️
+
+#### [- Challenge: Conceitos Avançados Foodfy)(#) 👨‍🍳️ 🚧️
 
 ---
 
