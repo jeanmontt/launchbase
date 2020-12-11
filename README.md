@@ -40,11 +40,11 @@
 - [Página descrição](https://github.com/jeanmontt/launchbase/tree/master/fase_02/02_iniciando_front_end/desafio_02-2_pagina-descricao) ✔️
 - [Página conteúdos e iframe](https://github.com/jeanmontt/launchbase/tree/master/fase_02/02_iniciando_front_end/desafio_02-3_pagina-posts-e-iframe) ✔️
 
-#### [- Challenge: Construindo Foodfy](https://github.com/jeanmontt/foodfy/tree/master/01_challenge-building-foodfy) ✔️
+#### [- Challenge: Construindo Foodfy](https://github.com/jeanmontt/foodfy/tree/master/01_challenge-building-foodfy) 👨‍🍳️ ✔️
 
 3. [Iniciando no Back-end:](https://github.com/jeanmontt/launchbase/tree/master/fase_02/03_inciando_back_end)
 - [Primeiro servidor](https://github.com/jeanmontt/launchbase/tree/master/fase_02/03_inciando_back_end/desafio_03-1_primeiro-servidor) ✔️
-- [Arquivos nunjucks e dados dinâmicos](#) 🚧️
+- [Arquivos nunjucks e dados dinâmicos](https://github.com/jeanmontt/launchbase/tree/master/fase_02/03_inciando_back_end/desafio_03-2_nunjucks-e-dados-dinamicos) ✔️
 - [Página de descrição do curso](#) 🚧️
 
 #### [- Challenge: Refatorando Foodfy](#) 👨‍🍳️ 🚧️
