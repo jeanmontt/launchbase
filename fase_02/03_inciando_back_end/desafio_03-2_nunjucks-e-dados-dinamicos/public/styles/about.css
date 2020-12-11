@@ -41,7 +41,8 @@
 }
 
 #tech {
-    margin: auto 150px;
+    margin: auto 250px;
+    text-align: center;
 }
 
 #tech .title h2 {
@@ -51,6 +52,7 @@
 
 #tech .container {
     display: flex;
+    justify-content: space-between;
 }
 
 #tech .container .grid {
@@ -68,6 +70,10 @@
 #tech .container .grid .card p {
     font-size: 22px;
     text-align: center;
+}
+
+#tech .container .img {
+    max-width: 500px;
 }
 
 #tech .container .img img {

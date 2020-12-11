@@ -2,7 +2,7 @@
 
 {% block head %}
     <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/about.css">
 {% endblock head %}
 
 {% block content %}
@@ -11,60 +11,34 @@
 
         <div id="about">
             <div class="img">
-                <img src="/assets/rocketseat.png" alt="Logo Rocketseat">
-                <h2>Rocketseat</h2>
+                <img src="{{data.logo_image}}" alt="Imagem logo {{data.logo_title}}">
+                <h2>{{data.logo_title}}</h2>
             </div>
 
             <div class="about-p">
-                <p>
-                    Mais do que uma plataforma de educação em tecnologia, somos uma comunidade incrível de programadores
-                    em busca do próximo nível. 🚀
-                </p>
-
-                <p>
-                    Em um mundo onde a informação fica obsoleta cada vez mais rápido, velocidade de aprendizado é a
-                    chave para o sucesso.
-                </p>
-
-                <p>
-                    Por isso a Rocketseat oferece através de uma plataforma inteligente e metodologia prática, além de
-                    comunidade, eventos, conteúdo e conexão com o mercado de trabalho, todas as ferramentas que você
-                    precisa para masterizar no menor tempo possível as tecnologias mais modernas de desenvolvimento web
-                    e mobile, e dessa forma avançar para o próximo nível como programador.
-                </p>
+                {% for item in data.about_paragraph %}
+                    <p>{{item.paragraph}}</p>
+                {% endfor %}
             </div>
         </div>
 
         <div id="tech">
             <div class="title">
-                <h2>Principais tecnologias utilizadas</h2>
+                <h2>{{data.techs_title}}</h2>
             </div>
 
             <div class="container">
                 <div class="grid">
-                    <div class="card">
-                        <img src="/assets/javascript.svg" alt="JavaScript">
-                        <p>JavaScript</p>
-                    </div>
-
-                    <div class="card">
-                        <img src="/assets/nodejs.svg" alt="Node.JS">
-                        <p>Node.JS</p>
-                    </div>
-
-                    <div class="card">
-                        <img src="/assets/reactjs.svg" alt="ReactJS">
-                        <p>ReactJS</p>
-                    </div>
-
-                    <div class="card">
-                        <img src="/assets/react-native.svg" alt="React Native">
-                        <p>React Native</p>
-                    </div>
+                    {% for item in data.techs_image %}
+                        <div class="card">
+                            <img src="{{item.img}}" alt="Imagem de {{item.name}}">
+                            <p>{{item.name}}</p>
+                        </div>
+                    {% endfor %}
                 </div>
 
                 <div class="img">
-                    <img src="/assets/launch.svg" alt="Imagem de astronalta">
+                    <img src="{{data.image_content}}" alt="{{data.image_content_alt}}">
                 </div>
             </div>
         </div>

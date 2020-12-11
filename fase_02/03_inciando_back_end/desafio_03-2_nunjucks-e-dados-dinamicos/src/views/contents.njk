@@ -11,58 +11,22 @@
         <h1>Conteúdos</h1>
 
         <div class="cards">
-            <div class="card" id="mapas-com-react-usando-leaflet">
-                <div class="card_image">
-                    <img src="/assets/mapa_react.png" alt="Mapas com React usando Leaflet">
-                </div>
+            {% for item in data %}
+                <div class="card" id="{{item.id}}">
+                    <div class="card_image">
+                        <img src="{{item.image}}" alt="{{item.title}}">
+                    </div>
 
-                <div class="card_container">
                     <div class="card_content">
-                        <p>Mapas com React usando Leaflet</p>
+                        <p>{{item.title}}</p>
                     </div>
 
                     <div class="card_info">
-                        <p>por Thiago Marinho</p>
-                        <p class="reading_time">11 min. de leitura</p>
+                        <p>{{item.by}}</p>
+                        <p class="reading_time">{{item.duration}}</p>
                     </div>
                 </div>
-            </div>
-
-            <div class="card" id="como-renomear-varios-arquivos-de-uma-vez-usando-o-terminal">
-                <div class="card_image">
-                    <img src="/assets/como_renomear.png"
-                        alt="Como renomear vários arquivos de uma vez usando o terminal">
-                </div>
-
-                <div class="card_container">
-                    <div class="card_content">
-                        <p>Como renomear arquivos pelo terminal</p>
-                    </div>
-
-                    <div class="card_info">
-                        <p>por Thiago Marinho</p>
-                        <p class="reading_time">2 min. de leitura</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" id="nextjs-novidades-na-versao-10-e-atualizacao-do-blog-para-melhorar-a-performance">
-                <div class="card_image">
-                    <img src="/assets/NextJS-Novidades.png"
-                        alt="Next.JS - Novidades na versão 10 e atualização do blog para melhorar a performance">
-                </div>
-
-                <div class="card_container">
-                    <div class="card_content">
-                        <p>Next.JS - Novidades na versão 10</p>
-                    </div>
-
-                    <div class="card_info">
-                        <p>por Thiago Marinho</p>
-                        <p class="reading_time">4 min. de leitura</p>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
 
         <div class="modal_overlay">
