@@ -1,0 +1,46 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/contents.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+{% endblock head %}
+
+{% block content %}
+    <section class="content">
+        <h1>Conteúdos</h1>
+
+        <div class="cards">
+            {% for item in data %}
+                <div class="card" id="{{item.id}}">
+                    <div class="card_image">
+                        <img src="{{item.image}}" alt="{{item.title}}">
+                    </div>
+
+                    <div class="card_content">
+                        <p>{{item.title}}</p>
+                    </div>
+
+                    <div class="card_info">
+                        <p>{{item.by}}</p>
+                        <p class="reading_time">{{item.duration}}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="modal_overlay">
+            <div class="modal">
+                <a class="close_modal">
+                    <i class="material-icons">close</i>
+                </a>
+
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
+
+{% block scripts %}
+    <script src="/scripts/scripts.js"></script>
+{% endblock scripts %}
