@@ -30,8 +30,8 @@
 
 - [Primeiro servidor](https://github.com/jeanmontt/launchbase/tree/master/fase_02/03_inciando_back_end/desafio_03-1_primeiro-servidor) ✔️
 - [Arquivos nunjucks e dados dinâmicos](https://github.com/jeanmontt/launchbase/tree/master/fase_02/03_inciando_back_end/desafio_03-2_nunjucks-e-dados-dinamicos) ✔️
-- [Página de descrição do curso](#) 🚧️
-- [Refatorando Foodfy](#) 🚧️
+- [Página de descrição do conteúdo](https://github.com/jeanmontt/launchbase/tree/master/fase_02/03_inciando_back_end/desafio_03-3_pagina-descricao-curso) 🚧️
+- [Refatorando Foodfy](#) 👨‍🍳️ 🚧️
 
 ## :calendar: Entrega
 

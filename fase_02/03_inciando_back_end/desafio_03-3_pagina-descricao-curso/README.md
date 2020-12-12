@@ -28,14 +28,14 @@
 
 ## :rocket: Sobre o desafio
 
-Nesse desafio você deve criar uma página de descrição do curso que deve ser chamada no lugar da modal quando o usuário clicar no card do curso.
+Nesse desafio você deve criar uma página de descrição do conteúdo que deve ser chamada no lugar da modal quando o usuário clicar no card do conteúdo.
 
 ### Rota
 
-A rota também será a `/courses`, porém o id do curso será passado via route params (ex.: `/courses/id_do_curso`). Dica: utilize o req.params para recuperar o id fornecido na rota.
+A rota também será a `/content`, porém o id do curso será passado via route params (ex.: `/content/id_do_conteudo`). Dica: utilize o req.params para recuperar o id fornecido na rota.
 
 ```js
-server.get("/courses/:id", function(req, res) {
+server.get("/content/:id", function(req, res) {
   const id = req.params.id;
 
   return res.send(`O id fornecido na rota é: ${id}`);
@@ -46,7 +46,7 @@ server.get("/courses/:id", function(req, res) {
 
 - Layout padrão
 - Card do curso
-- Link que redireciona para a página do curso
+- Link que redireciona para a página do conteúdo
 
 ### Fórum
 
