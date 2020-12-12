@@ -45,7 +45,7 @@ server.get("/content/:id", function(req, res) {
 ### Informações
 
 - Layout padrão
-- Card do curso
+- Card do conteúdo
 - Link que redireciona para a página do conteúdo
 
 ### Fórum
