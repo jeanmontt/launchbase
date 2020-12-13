@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  Desafio 3-3: Página de descrição do curso
+  Desafio 3-3: Página de descrição do conteúdo
 </h3>
 
 <blockquote align="center">“Não se perca tentando ser melhor que ninguém, esforce-se apenas por ser e dar o melhor de você.”</blockquote>
