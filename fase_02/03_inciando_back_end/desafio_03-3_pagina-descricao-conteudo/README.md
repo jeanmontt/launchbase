@@ -26,6 +26,14 @@
   <a href="#memo-licença">Licença</a>
 </p>
 
+---
+
+## 👨‍💻 Resultado do desafio
+
+<img src="./public/assets/desafio3-3.gif" alt="Gif demonstrativo challenge 2 Foodfy">
+
+---
+
 ## :rocket: Sobre o desafio
 
 Nesse desafio você deve criar uma página de descrição do conteúdo que deve ser chamada no lugar da modal quando o usuário clicar no card do conteúdo.
