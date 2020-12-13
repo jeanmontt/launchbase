@@ -1,0 +1,68 @@
+.content {
+    margin-top: 32px;
+}
+
+.content h1 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 32px;
+}
+
+.content .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content .cards .card {
+    max-width: 400px;
+    box-shadow: 10px 6px 6px 0px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    display: grid;
+}
+
+.content .cards .card:hover {
+    -webkit-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    transform: scale(1.04);
+    box-shadow: 15px 11px 6px 0px rgba(0, 0, 0, 0.4);
+    transition: 300ms;
+}
+
+.content .cards .card .card_image img {
+    width: 100%;
+}
+
+.content .cards .card .card_container {
+    background-color: var(--color-backgrond);
+    filter: brightness(80%);
+    padding-top: 10px;
+}
+
+.content .cards .card .card_content {
+    padding: 16px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.content .cards .card .card_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    align-items: center;
+}
+
+.content .cards .card .card_info p {
+    font-size: 18px;
+}
+
+.content .cards .card .card_info p.reading_time {
+    text-align: center;
+    background-color: var(--color-cards);
+    filter: brightness(85%);
+    border-radius: 8px;
+}
