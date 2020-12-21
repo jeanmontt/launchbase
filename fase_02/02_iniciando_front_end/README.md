@@ -31,7 +31,7 @@
 - [Primeiro HTML](https://github.com/jeanmontt/launchbase/tree/master/fase_02/02_iniciando_front_end/desafio_02-1_primeiro-html) ✔️
 - [Página de descrição](https://github.com/jeanmontt/launchbase/tree/master/fase_02/02_iniciando_front_end/desafio_02-2_pagina-descricao) ✔️
 - [Página de conteúdos e iframe](https://github.com/jeanmontt/launchbase/tree/master/fase_02/02_iniciando_front_end/desafio_02-3_pagina-posts-e-iframe) ✔️
-- [Construindo Foodfy](https://github.com/jeanmontt/foodfy/tree/master/01_challenge-building-foodfy) ✔️
+- [Construindo Foodfy](https://github.com/jeanmontt/foodfy/tree/master/01_challenge-building-foodfy) 👨‍🍳️ ✔️
 
 ## :calendar: Entrega
 
