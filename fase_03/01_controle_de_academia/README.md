@@ -10,12 +10,12 @@
 
 <p align="center">
 
-  <a href="https://rocketseat.com.br">
-    <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%23F8952D">
+  <a href="https://github.com/jeanmontt">
+    <img alt="Made by jeanmontt" src="https://img.shields.io/badge/made%20by-jeanmontt-blue">
   </a>
 
-  <a href="LICENSE" >
-    <img alt="License" src="https://img.shields.io/badge/license-MIT-%23F8952D">
+  <a href="https://github.com/jeanmontt/desafios-launchbase-bootcamp/commits/master" >
+    <img alt="Last commit" src="https://img.shields.io/github/last-commit/jeanmontt/launchbase">
   </a>
 
 </p>
@@ -28,7 +28,7 @@
 
 ## :rocket: Desafios
 
-- [Header](#) 🚧️
+- [Header](https://github.com/jeanmontt/launchbase/tree/master/fase_03/01_controle_de_academia/desafio_04-1_header) ✔️
 - [Card do Professor](#) 🚧️
 - [Formulário e Rota de cadastro do Professor](#) 🚧️
 - [Apresentação, edição e formatação dos dados de um professor](#) 🚧️

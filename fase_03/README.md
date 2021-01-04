@@ -22,8 +22,8 @@
 
 ## 📑️ Índice dos desafios
 
-4. [Controle de Academia](#) 🚧️
-- [Header](#) 🚧️
+4. [Controle de Academia:](https://github.com/jeanmontt/launchbase/tree/master/fase_03/01_controle_de_academia)
+- [Header](https://github.com/jeanmontt/launchbase/tree/master/fase_03/01_controle_de_academia/desafio_04-1_header) ✔️
 - [Card do Professor](#) 🚧️
 - [Formulário e Rota de cadastro do Professor](#) 🚧️
 - [Apresentação, edição e formatação dos dados de um professor](#) 🚧️
