@@ -10,11 +10,17 @@ routes.get("/instrutores", (req, res) => {
   return res.render("instructors/index");
 });
 
-routes.post("/instrutores", instructors.post);
-
 routes.get("/instrutores/novo", (req, res) => {
   return res.render("instructors/create");
 });
+
+routes.get("/instrutores/:id", instructors.show);
+
+routes.get("/instrutores/:id/editar", (req, res) => {
+  return res.render("instructors/edit");
+});
+
+routes.post("/instrutores", instructors.post);
 
 routes.get("/membros", (req, res) => {
   return res.send("members");
