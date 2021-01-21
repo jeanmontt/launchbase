@@ -1,13 +1,6 @@
 a.button {
-  padding: 8px 32px;
-  background-color: var(--primary-color);
-  color: white;
-  border-radius: 8px;
   display: block;
   box-sizing: border-box;
-  margin-top: 32px;
-  width: 100%;
-  font-size: 16px;
   text-align: center;
   text-decoration: none;
 }
