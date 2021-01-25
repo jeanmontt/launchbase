@@ -1,8 +1,10 @@
 const fs = require("fs");
+const Intl = require("intl");
+const { age, graduation } = require("./utils");
 const data = require("./data.json");
 
 //Create
-exports.post = function (req, res) {
+exports.post = function(req, res) {
   const keys = Object.keys(req.body);
 
   for (key of keys) {
@@ -40,4 +42,25 @@ exports.post = function (req, res) {
 
     return res.redirect("/professores");
   });
+};
+
+//Show
+exports.show = function(req, res) {
+  const { id } = req.params;
+
+  const foundTeacher = data.teachers.find(function(teacher) {
+    return teacher.id == id;
+  });
+
+  if (!foundTeacher) return res.send("Teacher not found!");
+
+  const teacher = {
+    ...foundTeacher,
+    age: age(foundTeacher.birth),
+    graduation: graduation(foundTeacher.graduation),
+    services: foundTeacher.services.split(","),
+    created_at: new Intl.DateTimeFormat("pt-BR").format(foundTeacher.created_at)
+  }
+
+  return res.render("teachers/show", { teacher });
 };

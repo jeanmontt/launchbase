@@ -16,8 +16,10 @@ routes.get("/professores/novo", (req, res) => {
   return res.render("teachers/create");
 });
 
+routes.get("/professores/:id", teachers.show);
+
 routes.get("/alunos", (req, res) => {
   return res.send("students");
 });
 
-module.exports = routes;
+module.exports = routes; 

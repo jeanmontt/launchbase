@@ -32,7 +32,8 @@ input::placeholder {
   font-weight: normal;
 }
 
-button[type="submit"] {
+button[type="submit"],
+.details a {
   padding: 8px 32px;
   background-color: var(--primary-color);
   color: white;
@@ -44,7 +45,8 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-button[type="submit"]:hover {
+button[type="submit"]:hover,
+.details a:hover {
   opacity: 0.8;
   transition: 250ms;
 }
