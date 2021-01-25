@@ -31,7 +31,7 @@
 - [Header](https://github.com/jeanmontt/launchbase/tree/master/fase_03/01_controle_de_academia/desafio_04-1_header) ✔️
 - [Card do Professor](https://github.com/jeanmontt/launchbase/tree/master/fase_03/01_controle_de_academia/desafio_4-2_card_do_professor) ✔️
 - [Formulário e Rota de cadastro do Professor](https://github.com/jeanmontt/launchbase/tree/master/fase_03/01_controle_de_academia/desafio_4-3_formulario_e_rota_de_cadastro_do_professor) ✔️
-- [Apresentação, edição e formatação dos dados de um professor](#) 🚧️
+- [Apresentação, edição e formatação dos dados de um professor](https://github.com/jeanmontt/launchbase/tree/master/fase_03/01_controle_de_academia/desafio_4-4_apresentacao_edicao_formata%C3%A7%C3%A3o_dos_dados_do_professor) 🚧️
 - [HTTP: PUT e DELETE](#) 🚧️
 - [Listagem de professores](#) 🚧️
 - [Listagem de professores](#) 🚧️
