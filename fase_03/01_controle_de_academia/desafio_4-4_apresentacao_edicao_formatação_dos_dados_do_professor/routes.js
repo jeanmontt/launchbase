@@ -18,6 +18,8 @@ routes.get("/professores/novo", (req, res) => {
 
 routes.get("/professores/:id", teachers.show);
 
+routes.get("/professores/:id/editar", teachers.edit);
+
 routes.get("/alunos", (req, res) => {
   return res.send("students");
 });

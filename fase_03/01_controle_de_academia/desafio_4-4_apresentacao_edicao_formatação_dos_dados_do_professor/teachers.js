@@ -1,6 +1,6 @@
 const fs = require("fs");
 const Intl = require("intl");
-const { age, graduation } = require("./utils");
+const { age, date, graduation } = require("./utils");
 const data = require("./data.json");
 
 //Create
@@ -63,4 +63,22 @@ exports.show = function(req, res) {
   }
 
   return res.render("teachers/show", { teacher });
+};
+
+//Edit
+exports.edit = function(req, res) {
+  const { id } = req.params;
+
+  const foundTeacher = data.teachers.find(function(teacher) {
+    return teacher.id == id;
+  });
+
+  if (!foundTeacher) return res.send("Teacher not found!");
+
+  const teacher = {
+    ...foundTeacher,
+    birth: date(foundTeacher.birth)
+  };
+
+  return res.render("teachers/edit", { teacher });
 };
