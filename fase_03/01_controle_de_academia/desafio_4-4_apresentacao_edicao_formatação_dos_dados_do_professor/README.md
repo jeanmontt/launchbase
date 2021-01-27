@@ -26,6 +26,10 @@
   <a href="#memo-licença">Licença</a>
 </p>
 
+## 👨‍💻 Resultado do desafio
+
+<img src="./public/assets/challenge_4-4.gif" alt="Resultado do desafio">
+
 ## :rocket: Sobre o desafio
 
 Nessa etapa você deve criar duas rotas: uma para apresentar os dados do professor (show) e outra para a edição dos dados cadastrados (edit). Além disso, realize a formatação dos dados cadastrados para a correta exibição no HTML
