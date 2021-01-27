@@ -20,6 +20,10 @@ routes.get("/instrutores/:id/editar", instructors.edit);
 
 routes.post("/instrutores", instructors.post);
 
+routes.put("/instrutores", instructors.put);
+
+routes.delete("/instrutores", instructors.delete);
+
 routes.get("/membros", (req, res) => {
   return res.send("members");
 });
