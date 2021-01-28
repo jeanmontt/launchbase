@@ -33,10 +33,6 @@
 - [Página de conteúdos e iframe](https://github.com/jeanmontt/launchbase/tree/master/fase_02/02_iniciando_front_end/desafio_02-3_pagina-posts-e-iframe) ✔️
 - [Construindo Foodfy](https://github.com/jeanmontt/foodfy/tree/master/01_challenge-building-foodfy) 👨‍🍳️ ✔️
 
-## :calendar: Entrega
-
-Esses desafios **não precisam ser entregues** e não receberão correção. Após concluí-los, adicionar esses códigos ao seu Github é uma boa forma de demonstrar seus conhecimentos para oportunidades futuras.
-
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.

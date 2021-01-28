@@ -60,10 +60,6 @@ Você tem liberdade para escolher a estilização que preferir para esse desafio
 - Utilize o `keyframes` e o `animation` para fazer uma animação do card.
 - Utilize o `box-shadow` para aplicar uma sombra no card.
 
-## :calendar: Entrega
-
-Esse desafio **não precisa ser entregue** e não receberá correção. Após concluí-lo, adicionar esse código ao seu Github é uma boa forma de demonstrar seus conhecimentos para oportunidades futuras.
-
 ## 💾️ Como baixar/testar o projeto
 
 - Você irá precisar instalar o [Git](https://git-scm.com/), [NodeJS](https://nodejs.org/pt-br/download/) + [npm](https://www.npmjs.com/get-npm):

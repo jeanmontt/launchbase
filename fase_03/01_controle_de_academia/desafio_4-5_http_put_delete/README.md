@@ -49,14 +49,6 @@ Você tem liberdade para escolher a estilização que preferir para esse desafio
 - O botão de deletar deve ficar ao lado do botão de editar;
 - O botão de deletar deve ser da cor vermelha.
 
-## :calendar: Entrega
-
-Esse desafio **não precisa ser entregue** e não receberá correção. Após concluí-lo, adicionar esse código ao seu Github é uma boa forma de demonstrar seus conhecimentos para oportunidades futuras.
-
-## :memo: Licença
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](../LICENSE) para mais detalhes.
-
 ## 💾️ Como baixar/testar o projeto
 
 - Você irá precisar instalar o [Git](https://git-scm.com/), [NodeJS](https://nodejs.org/pt-br/download/) + [npm](https://www.npmjs.com/get-npm):

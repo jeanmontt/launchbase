@@ -32,10 +32,6 @@
 - [Funções e estruturas de repetição](https://github.com/jeanmontt/launchbase/tree/master/fase_02/01_introducao_programacao_web/desafio_01-3_funcoes-e-estruturas-de-repeticao) ✔️
 - [Aplicação: Operações bancárias](https://github.com/jeanmontt/launchbase/tree/master/fase_02/01_introducao_programacao_web/desafio_01-4_aplicacao-operacoes-bancarias) ✔️
 
-## :calendar: Entrega
-
-Esses desafios **não precisam ser entregues** e não receberão correção, mas você pode ver um exemplo de solução [aqui](https://github.com/Rocketseat/bootcamp-launchbase-desafios-01/tree/codigos). Após concluí-los, adicionar esses códigos ao seu Github é uma boa forma de demonstrar seus conhecimentos para oportunidades futuras.
-
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.

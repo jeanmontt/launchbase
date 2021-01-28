@@ -33,10 +33,6 @@
 - [Página de descrição do conteúdo](https://github.com/jeanmontt/launchbase/tree/master/fase_02/03_inciando_back_end/desafio_03-3_pagina-descricao-conteudo) ✔️
 - [Refatorando Foodfy](https://github.com/jeanmontt/foodfy/tree/master/02_challenge-refactoring-foodfy) 👨‍🍳️ ✔️
 
-## :calendar: Entrega
-
-Esses desafios **não precisam ser entregues** e não receberão correção. Após concluí-los, adicionar esses códigos ao seu Github é uma boa forma de demonstrar seus conhecimentos para oportunidades futuras.
-
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
