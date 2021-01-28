@@ -1,0 +1,32 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/styles/teachers/index.css">
+  <link rel="stylesheet" href="/styles/teachers/create.css">
+  <link rel="stylesheet" href="/styles/teachers/edit.css">
+
+  <title>Class Manager - Editar Professor: {{ teacher.name }}</title>
+{% endblock head %}
+
+{% block content %}
+  <div class="card">
+    <section class="avatar" style="background: url({{ teacher.avatar_url }}/500x500) no-repeat center center / cover"></section>
+
+    <section class="details">
+      <form method="post" action="/professores?_method=PUT">
+
+        <h3>Editar Professor</h3>
+
+        {% include "teachers/fields.njk"%}
+
+        <input type="hidden" name="id" value="{{ teacher.id }}">
+      </form>
+
+      <form id="form_delete" method="post" action="/professores?_method=DELETE">
+        <input type="hidden" name="id" value="{{ teacher.id }}">
+
+        <button type="submit">Deletar</button>
+      </form>
+    </section>
+  </div>
+{% endblock content %}

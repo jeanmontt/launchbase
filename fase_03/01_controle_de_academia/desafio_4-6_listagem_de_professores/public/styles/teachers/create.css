@@ -1,0 +1,53 @@
+input {
+  width: 100%;
+  outline: none;
+  color: #555;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 4px;
+}
+
+input[type="date"] {
+  width: initial;
+}
+
+select {
+  width: 50%;
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid var(--primary-color);
+  background-color: ghostwhite;
+  font-size: 14px;
+  color: #555;
+  margin-top: 4px;
+}
+
+input[type="radio"] {
+  width: initial;
+  margin-right: 4px;
+}
+
+input::placeholder {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+button[type="submit"],
+.details a {
+  padding: 8px 32px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 32px 4px 0 0;
+  width: 49%;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+}
+
+button[type="submit"]:hover,
+.details a:hover {
+  opacity: 0.8;
+  transition: 250ms;
+}
