@@ -26,4 +26,10 @@ a.button {
   margin-top: 32px;
   width: 100%;
   font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover,
+a.button:hover {
+  opacity: 0.9;
 }

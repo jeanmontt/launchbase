@@ -57,3 +57,28 @@ header {
   font-weight: bold;
   color: var(--primary-color);
 }
+
+.card {
+  background-color: white;
+  width: 800px;
+  min-height: 400px;
+  margin: 45px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 5px 5px 6px -2px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation-name: up;
+  animation-duration: 700ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 500ms;
+}
+
+@keyframes up {
+  from {
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+  }
+}

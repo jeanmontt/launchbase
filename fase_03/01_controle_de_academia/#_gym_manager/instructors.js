@@ -3,8 +3,15 @@ const Intl = require("intl");
 const data = require("./data.json");
 const { age, date } = require("./utils");
 
+//Index
+exports.index = (req, res) => {
+
+
+  return res.render("instructors/index", { instructors: data.instructors });
+}
+
 //Show
-exports.show = function(req, res) {
+exports.show = (req, res) => {
   const { id } = req.params;
 
   const foundInstructor = data.instructors.find(function(instructor) {
@@ -24,7 +31,7 @@ exports.show = function(req, res) {
 };
 
 //Create
-exports.post = function(req, res) {
+exports.post = (req, res) => {
   const keys = Object.keys(req.body);
 
   for (key of keys) {
@@ -57,7 +64,7 @@ exports.post = function(req, res) {
 };
 
 //Edit
-exports.edit = function(req, res) {
+exports.edit = (req, res) => {
   const { id } = req.params;
 
   const foundInstructor = data.instructors.find(function(instructor) {
@@ -75,7 +82,7 @@ exports.edit = function(req, res) {
 };
 
 //Put
-exports.put = function(req, res) {
+exports.put = (req, res) => {
   const { id } = req.body;
   let index = 0;
 
@@ -91,7 +98,8 @@ exports.put = function(req, res) {
   const instructor = {
     ...foundInstructor,
     ...req.body,
-    birth: Date.parse(req.body.birth)
+    birth: Date.parse(req.body.birth),
+    id: Number(req.body.id)
   };
 
   data.instructors[index] = instructor;
@@ -104,7 +112,7 @@ exports.put = function(req, res) {
 };
 
 //Delete
-exports.delete = function(req, res) {
+exports.delete = (req, res) => {
   const { id } = req.body;
 
   const filteredInstructors = data.instructors.filter(function(instructor) {
