@@ -66,6 +66,41 @@ Você tem liberdade para escolher a estilização que preferir para esse desafio
 
 Esse desafio **não precisa ser entregue** e não receberá correção. Após concluí-lo, adicionar esse código ao seu Github é uma boa forma de demonstrar seus conhecimentos para oportunidades futuras.
 
+## 💾️ Como baixar/testar o projeto
+
+- Você irá precisar instalar o [Git](https://git-scm.com/), [NodeJS](https://nodejs.org/pt-br/download/) + [npm](https://www.npmjs.com/get-npm):
+
+```bash
+# Versões mínimas ou superiores.
+$ node -v
+v12.18.3
+
+$ npm -v
+6.14.6
+```
+
+- Para configurar, no bash digite os seguinte códigos:
+
+```bash
+# Clonar o repositório
+$ git clone https://github.com/jeanmontt/launchbase.git
+
+#Entrar no diretório
+$ cd launchbase/fase_02/03_inciando_back_end/desafio_03-1_primeiro-servidor
+
+#Instalar as dependências
+$ npm install
+
+#Iniciar o local host
+$ npm start
+```
+
+- Por ultimo abra seu navegador e digite:
+
+```
+localhost:3000
+```
+
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](../LICENSE) para mais detalhes.
