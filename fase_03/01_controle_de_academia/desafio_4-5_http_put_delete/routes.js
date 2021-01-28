@@ -10,8 +10,6 @@ routes.get("/professores", (req, res) => {
   return res.render("teachers/index");
 });
 
-routes.post("/professores", teachers.post);
-
 routes.get("/professores/novo", (req, res) => {
   return res.render("teachers/create");
 });
@@ -19,6 +17,12 @@ routes.get("/professores/novo", (req, res) => {
 routes.get("/professores/:id", teachers.show);
 
 routes.get("/professores/:id/editar", teachers.edit);
+
+routes.post("/professores", teachers.post);
+
+routes.put("/professores", teachers.put);
+
+routes.delete("/professores", teachers.delete);
 
 routes.get("/alunos", (req, res) => {
   return res.send("students");
