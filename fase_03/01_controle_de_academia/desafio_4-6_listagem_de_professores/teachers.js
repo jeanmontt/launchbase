@@ -3,8 +3,21 @@ const Intl = require("intl");
 const { age, date, graduation } = require("./utils");
 const data = require("./data.json");
 
+//Index
+exports.index = (req, res) => {
+  let teachers = data.teachers.map(teacher =>{
+    const newTeacher = {
+      ...teacher,
+      services: teacher.services.split(",")
+    }
+    return newTeacher;
+  });
+
+  return res.render("teachers/index", { teachers });
+}
+
 //Create
-exports.post = function(req, res) {
+exports.post = (req, res) => {
   const keys = Object.keys(req.body);
 
   for (key of keys) {
@@ -45,7 +58,7 @@ exports.post = function(req, res) {
 };
 
 //Show
-exports.show = function(req, res) {
+exports.show = (req, res) => {
   const { id } = req.params;
 
   const foundTeacher = data.teachers.find(function(teacher) {
@@ -66,7 +79,7 @@ exports.show = function(req, res) {
 };
 
 //Edit
-exports.edit = function(req, res) {
+exports.edit = (req, res) => {
   const { id } = req.params;
 
   const foundTeacher = data.teachers.find(function(teacher) {
@@ -84,7 +97,7 @@ exports.edit = function(req, res) {
 };
 
 //Put
-exports.put = function(req, res) {
+exports.put = (req, res) => {
   const { id } = req.body;
   let index = 0;
 
@@ -116,7 +129,7 @@ exports.put = function(req, res) {
 };
 
 //Delete
-exports.delete = function(req, res) {
+exports.delete = (req, res) => {
   const { id } = req.body;
 
   const filteredTeachers = data.teachers.filter(function(teacher) {

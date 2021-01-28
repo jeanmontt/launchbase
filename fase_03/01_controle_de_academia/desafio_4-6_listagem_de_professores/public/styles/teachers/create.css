@@ -40,10 +40,9 @@ button[type="submit"],
   font-weight: bold;
   border-radius: 8px;
   margin: 32px 4px 0 0;
-  width: 49%;
+  width: 100%;
   font-size: 16px;
   cursor: pointer;
-  float: left;
 }
 
 button[type="submit"]:hover,
