@@ -12,7 +12,7 @@
     <img alt="Made by jeanmontt" src="https://img.shields.io/badge/made%20by-jeanmontt-blue">
   </a>
 
-  <a href="https://github.com/jeanmontt/desafios-launchbase-bootcamp/commits/master" >
+  <a href="https://github.com/jeanmontt/launchbase/commits/master" >
     <img alt="Last commit" src="https://img.shields.io/github/last-commit/jeanmontt/launchbase">
   </a>
 

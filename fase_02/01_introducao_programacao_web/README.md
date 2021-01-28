@@ -14,10 +14,9 @@
     <img alt="Made by jeanmontt" src="https://img.shields.io/badge/made%20by-jeanmontt-blue">
   </a>
 
-  <a href="https://github.com/jeanmontt/desafios-launchbase-bootcamp/commits/master" >
+  <a href="https://github.com/jeanmontt/launchbase/commits/master" >
     <img alt="Last commit" src="https://img.shields.io/github/last-commit/jeanmontt/launchbase">
   </a>
-
 </p>
 
 <p align="center">
@@ -43,4 +42,10 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para m
 
 ---
 
-Feito com :purple_heart: by [Rocketseat](https://rocketseat.com.br) :wave: [Entre na nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
+#### Desenvolvido com 💙️ por:
+
+***Jean Monteiro*** 
+<br/> 
+<a href="https://www.linkedin.com/in/jeanmont/">
+<img src="https://raw.githubusercontent.com/jeanmontt/NLW-1.0/master/public/assets/linkedin.png">
+</a>
