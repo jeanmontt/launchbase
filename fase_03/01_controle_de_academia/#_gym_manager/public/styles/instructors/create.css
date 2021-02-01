@@ -1,10 +1,18 @@
-input {
+input,
+select {
   width: 100%;
   outline: none;
   color: #555;
   font-weight: bold;
   font-size: 18px;
   margin-top: 4px;
+}
+
+select {
+  background-color: white;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  width: 15%;
 }
 
 input[type="radio"] {
