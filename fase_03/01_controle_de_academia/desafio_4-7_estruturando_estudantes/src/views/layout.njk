@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="/styles/main.css">
 
@@ -17,11 +17,12 @@
   <body>
     <header>
       <div class="links">
-        <a href="/" class="active">Professores</a>
+        <a href="/professores">Professores</a>
         <a href="/alunos">Alunos</a>
       </div>
     </header>
-
     {% block content %}{% endblock content %}
+
+    <script src="/scripts/scripts.js"></script>
   </body>
 </html>

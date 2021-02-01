@@ -18,7 +18,13 @@ module.exports = {
     const month = `0${date.getUTCMonth() + 1}`.slice(-2);
     const day = `0${date.getUTCDate()}`.slice(-2);
 
-    return `${year}-${month}-${day}`;
+    return {
+      day,
+      month,
+      year,
+      iso: `${year}-${month}-${day}`,
+      birthDay: `${day}/${month}`
+    };
   },
   graduation: function(graduation) {
     switch (graduation) {
@@ -30,6 +36,26 @@ module.exports = {
         return graduation = "Mestrado";
       case "D": 
         return graduation = "Doutorado";
+    }
+  },
+  grade: function(school_year) {
+    switch (school_year) {
+      case "5EF":
+        return school_year = "5º ano - Ensino fundamental";
+      case "6EF":
+        return school_year = "6º ano - Ensino fundamental";
+      case "7EF":
+        return school_year = "7º ano - Ensino fundamental";
+      case "8EF":
+        return school_year = "8º ano - Ensino fundamental";
+      case "9EF":
+        return school_year = "9º ano - Ensino fundamental";
+      case "1EM":
+        return school_year = "1º ano - Ensino médio";
+      case "2EM":
+        return school_year = "2º ano - Ensino médio";
+      case "3EM":
+        return school_year = "3º ano - Ensino médio";  
     }
   }
 };

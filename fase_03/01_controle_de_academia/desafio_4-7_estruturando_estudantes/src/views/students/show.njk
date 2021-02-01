@@ -1,0 +1,50 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/styles/create.css">
+  <link rel="stylesheet" href="/styles/show.css">
+
+  <title>Class Manager - Aluno: {{ student.name }}</title>
+{% endblock head %}
+
+{% block content %}
+  <div class="card">
+    <section class="avatar" style="background: url({{ student.avatar_url }}/500x500) no-repeat center center / cover"></section>
+
+    <section class="details">
+      <h3>Detalhes do aluno</h3>
+
+      <div class="item">
+        <div>Nome completo</div>
+        <div>{{ student.name }}</div>
+      </div>
+
+      <div class="item">
+        <div>Email</div>
+        <div>{{ student.email }}</div>
+      </div>
+
+      <div class="item">
+        <div>Data de nascimento</div>
+        <div>{{ student.birth }}</div>
+      </div>
+
+      <div class="item">
+        <div>Ano escolar</div>
+        <div>{{ student.school_year }}</div>
+      </div>
+
+      <div class="item">
+        <div>Tipo de aula</div>
+        <div>{{ student.class_type }}</div>
+      </div>
+
+      <div class="item">
+        <div>Carga horária semanal</div>
+        <div>{{ student.workload }} horas</div>
+      </div>
+
+      <a href="/alunos/{{ student.id }}/editar">Editar</a>
+    </section>
+  </div>
+{% endblock content %}

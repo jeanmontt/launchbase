@@ -1,9 +1,9 @@
 {% extends "layout.njk" %}
 
 {% block head %}
-  <link rel="stylesheet" href="/styles/teachers/show.css">
-  <link rel="stylesheet" href="/styles/teachers/create.css">
-  <link rel="stylesheet" href="/styles/teachers/edit.css">
+  <link rel="stylesheet" href="/styles/show.css">
+  <link rel="stylesheet" href="/styles/create.css">
+  <link rel="stylesheet" href="/styles/edit.css">
 
   <title>Class Manager - Editar Professor: {{ teacher.name }}</title>
 {% endblock head %}
@@ -29,4 +29,6 @@
       </form>
     </section>
   </div>
+
+  {% include "confirm.njk" %}
 {% endblock content %}

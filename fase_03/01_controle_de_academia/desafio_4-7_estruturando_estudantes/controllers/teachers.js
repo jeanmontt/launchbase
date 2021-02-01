@@ -1,9 +1,8 @@
 const fs = require("fs");
 const Intl = require("intl");
-const { age, date, graduation } = require("./utils");
-const data = require("./data.json");
+const { age, date, graduation } = require("../utils");
+const data = require("../data.json");
 
-//Index
 exports.index = (req, res) => {
   let teachers = data.teachers.map(teacher =>{
     const newTeacher = {
@@ -16,7 +15,10 @@ exports.index = (req, res) => {
   return res.render("teachers/index", { teachers });
 }
 
-//Create
+exports.create = (req, res) => {
+  return res.render("teachers/create");
+}
+
 exports.post = (req, res) => {
   const keys = Object.keys(req.body);
 
@@ -36,8 +38,14 @@ exports.post = (req, res) => {
   } = req.body;
 
   birth = Date.parse(birth);
-  const id = Number(data.teachers.length + 1);
   const created_at = Date.now();
+
+  let id = 1;
+  const lastTeacher = data.teachers[data.teachers.length - 1];
+
+  if (lastTeacher) {
+    id = lastTeacher.id + 1;
+  }
 
   data.teachers.push({
     id,
@@ -57,7 +65,6 @@ exports.post = (req, res) => {
   });
 };
 
-//Show
 exports.show = (req, res) => {
   const { id } = req.params;
 
@@ -78,7 +85,6 @@ exports.show = (req, res) => {
   return res.render("teachers/show", { teacher });
 };
 
-//Edit
 exports.edit = (req, res) => {
   const { id } = req.params;
 
@@ -90,13 +96,12 @@ exports.edit = (req, res) => {
 
   const teacher = {
     ...foundTeacher,
-    birth: date(foundTeacher.birth)
+    birth: date(foundTeacher.birth).iso
   };
 
   return res.render("teachers/edit", { teacher });
 };
 
-//Put
 exports.put = (req, res) => {
   const { id } = req.body;
   let index = 0;
@@ -128,7 +133,6 @@ exports.put = (req, res) => {
   });
 };
 
-//Delete
 exports.delete = (req, res) => {
   const { id } = req.body;
 
