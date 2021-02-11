@@ -31,7 +31,7 @@
 - [Listagem de professores](https://github.com/jeanmontt/launchbase/tree/master/fase_03/01_controle_de_academia/desafio_4-6_listagem_de_professores) ✔️
 - [Estruturando estudantes](https://github.com/jeanmontt/launchbase/tree/master/fase_03/01_controle_de_academia/desafio_4-7_estruturando_estudantes) ✔️
 
-#### [- Challenge: Admin Foodfy](https://github.com/jeanmontt/foodfy/tree/master/03_challenge-admin-foodfy) 👨‍🍳️ 🚧️
+#### [- Challenge: Admin Foodfy](https://github.com/jeanmontt/foodfy/tree/master/03_challenge-admin-foodfy) 👨‍🍳️ ✔️
 
 5. Persistindo dados da aplicação 🚧️
 - Refatorando aplicação e configurando o BD 🚧️
