@@ -1,8 +1,11 @@
 const { age, date } = require("../../lib/utils");
+const Instructor = require("../models/instructor");
 
 module.exports = {
   index(req, res) {
-    return res.render("instructors/index");
+    Instructor.all((instructors) => {
+      return res.render("instructors/index", { instructors });
+    });
   },
 
   create(req, res) {
@@ -18,19 +21,21 @@ module.exports = {
       }
     };
 
-    let {
-      avatar_url,
-      name,
-      birth,
-      gender,
-      services
-    } = req.body;
-
-    return
+    Instructor.create(req.body, (instructor) => {
+      return res.redirect(`/instrutores/${instructor.id}`);
+    });
   },
 
   show(req, res) {
-    return
+    Instructor.find(req.params.id, (instructor) => {
+      if (!instructor) return res.send("Instructor not found!");
+
+      instructor.age = age(instructor.birth);
+      instructor.services = instructor.services.split(",");
+      instructor.created_at = date(instructor.created_at).format;
+
+      return res.render("instructors/show", { instructor });
+    });
   },
 
   edit(req, res) {
