@@ -33,8 +33,8 @@
 
 #### [- Challenge: Admin Foodfy](https://github.com/jeanmontt/foodfy/tree/master/03_challenge-admin-foodfy) 👨‍🍳️ ✔️
 
-5. Persistindo dados da aplicação 🚧️
-- Refatorando aplicação e configurando o BD 🚧️
+5. [Persistindo dados da aplicação](https://github.com/jeanmontt/launchbase/tree/master/fase_03/01_controle_de_academia)
+- [Refatorando aplicação e configurando o BD](https://github.com/jeanmontt/launchbase/tree/master/fase_03/01_controle_de_academia/desafio_5-1_refatorando_aplicacao_e_config_bd) ✔️
 - Interagindo com o BD 🚧️
 - Relacionamentos e filtros no BD 🚧️
 - Paginação de resultados no BD 🚧️

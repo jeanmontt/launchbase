@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  Desafios Módulo 4 - Controle de Academia
+  Desafios Módulo 4 - Controle de Academia e Módulo 5 - Persistindo dados da aplicação
 </h3>
 
 <blockquote align="center">“Faça seu melhor, mas sempre com prazo de entrega!”</blockquote>
@@ -38,7 +38,7 @@
 
 #### [- Challenge: Admin Foodfy](https://github.com/jeanmontt/foodfy/tree/master/03_challenge-admin-foodfy) 👨‍🍳️ ✔️
 
-- [Refatorando aplicação e configurando o BD](https://github.com/jeanmontt/launchbase/tree/master/fase_03/01_controle_de_academia/desafio_5-1_refatorando_aplicacao_e_config_bd) 🚧️
+- [Refatorando aplicação e configurando o BD](https://github.com/jeanmontt/launchbase/tree/master/fase_03/01_controle_de_academia/desafio_5-1_refatorando_aplicacao_e_config_bd) ✔️
 - Interagindo com o BD 🚧️
 - Relacionamentos e filtros no BD 🚧️
 - Paginação de resultados no BD 🚧️
