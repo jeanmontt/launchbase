@@ -22,16 +22,18 @@
       <tbody>
         {% for teacher in teachers %}
           <tr>
-              <td>
-                <span style="background-image: url({{ teacher.avatar_url }})"></span>
-                {{ teacher.name }}
-              </td>
-              <td>
-                {% for service in teacher.services %}
-                  <span>{{ service }}</span>
-                {% endfor %}
-              </td>
-              <td><a href="/professores/{{ teacher.id }}">Ver</a></td>
+            <td>
+              <span style="background-image: url({{ teacher.avatar_url }})"></span>
+              {{ teacher.name }}
+            </td>
+            <td>
+              {% for service in teacher.services %}
+                <span>{{ service }}</span>
+              {% endfor %}
+            </td>
+            <td>
+              <a href="/professores/{{ teacher.id }}">Ver</a>
+            </td>
           </tr>
         {% endfor %}
       </tbody>

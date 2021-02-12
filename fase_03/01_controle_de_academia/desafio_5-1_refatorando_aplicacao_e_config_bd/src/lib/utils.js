@@ -1,5 +1,5 @@
 module.exports = {
-  age: function(timestamp) {
+  age(timestamp) {
     const today = new Date();
     const birthDate = new Date(timestamp);
 
@@ -12,7 +12,8 @@ module.exports = {
 
     return age;
   },
-  date: function(timestamp) {
+
+  date(timestamp) {
     const date = new Date(timestamp);
     const year = date.getUTCFullYear();
     const month = `0${date.getUTCMonth() + 1}`.slice(-2);
@@ -26,19 +27,21 @@ module.exports = {
       birthDay: `${day}/${month}`
     };
   },
-  graduation: function(graduation) {
+
+  graduation(graduation) {
     switch (graduation) {
       case "EM":
         return graduation = "Ensino Médio Completo";
       case "ES":
-        return graduation ="Ensino Superior Completo";
+        return graduation = "Ensino Superior Completo";
       case "M":
         return graduation = "Mestrado";
-      case "D": 
+      case "D":
         return graduation = "Doutorado";
     }
   },
-  grade: function(school_year) {
+
+  grade(school_year) {
     switch (school_year) {
       case "5EF":
         return school_year = "5º ano - Ensino fundamental";
@@ -55,7 +58,7 @@ module.exports = {
       case "2EM":
         return school_year = "2º ano - Ensino médio";
       case "3EM":
-        return school_year = "3º ano - Ensino médio";  
+        return school_year = "3º ano - Ensino médio";
     }
   }
 };
