@@ -38,6 +38,13 @@
 
 #### [- Challenge: Admin Foodfy](https://github.com/jeanmontt/foodfy/tree/master/03_challenge-admin-foodfy) 👨‍🍳️ ✔️
 
+- [Refatorando aplicação e configurando o BD](https://github.com/jeanmontt/launchbase/tree/master/fase_03/01_controle_de_academia/desafio_5-1_refatorando_aplicacao_e_config_bd) 🚧️
+- Interagindo com o BD 🚧️
+- Relacionamentos e filtros no BD 🚧️
+- Paginação de resultados no BD 🚧️
+
+#### - Challenge: Persistindo Dados do Foodfy 👨‍🍳️ 🚧️
+
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
