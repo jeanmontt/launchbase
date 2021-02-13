@@ -1,8 +1,20 @@
-const { date, grade } = require("../../lib/utils");
+const { age, date, graduation } = require("../../lib/utils");
+const Teacher = require("../models/teacher");
 
 module.exports = {
   index(req, res) {
-    return res.render("teachers/index");
+    Teacher.all((teachers) => {
+      teachers = teachers.map(teacher => {
+        const newTeacher = {
+          ...teacher,
+          services: teacher.services.split(",")
+        }
+
+        return newTeacher;
+      });
+
+      return res.render("teachers/index", { teachers });
+    });
   },
 
   create(req, res) {
@@ -18,15 +30,32 @@ module.exports = {
       }
     };
 
-    return;
+    Teacher.create(req.body, (teacher) => {
+      return res.redirect(`/professores/${teacher.id}`);
+    });
   },
 
   show(req, res) {
-    return;
+    Teacher.find(req.params.id, (teacher) => {
+      if (!teacher) return res.send("Teacher not found!");
+
+      teacher.age = age(teacher.birth);
+      teacher.graduation = graduation(teacher.graduation);
+      teacher.services = teacher.services.split(",");
+      teacher.created_at = date(teacher.created_at).format;
+
+      return res.render("teachers/show", { teacher });
+    });
   },
 
   edit(req, res) {
-    return;
+    Teacher.find(req.params.id, (teacher) => {
+      if (!teacher) return res.send("Teacher not found!");
+
+      teacher.birth = date(teacher.birth).iso;
+
+      return res.render("teachers/edit", { teacher });
+    });
   },
 
   put(req, res) {
@@ -38,10 +67,14 @@ module.exports = {
       }
     };
 
-    return;
+    Teacher.update(req.body, () => {
+      return res.redirect(`/professores/${req.body.id}`);
+    });
   },
 
   delete(req, res) {
-    return;
+    Teacher.delete(req.body.id, () => {
+      return res.redirect("/professores");
+    });
   }
 };
