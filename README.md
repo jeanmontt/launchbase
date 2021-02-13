@@ -64,7 +64,7 @@
 
 5. [Persistindo dados da aplicação](https://github.com/jeanmontt/launchbase/tree/master/fase_03/01_controle_de_academia)
 - [Refatorando aplicação e configurando o BD](https://github.com/jeanmontt/launchbase/tree/master/fase_03/01_controle_de_academia/desafio_5-1_refatorando_aplicacao_e_config_bd) ✔️
-- Interagindo com o BD 🚧️
+- [Interagindo com o BD](https://github.com/jeanmontt/launchbase/tree/master/fase_03/01_controle_de_academia/desafio_5-2_interagindo_com_bd) ✔️
 - Relacionamentos e filtros no BD 🚧️
 - Paginação de resultados no BD 🚧️
 
