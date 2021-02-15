@@ -8,6 +8,26 @@
   border-spacing: 0;
 }
 
+.table .header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.table form {
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  gap: 8px;
+}
+
+.table form input {
+  border: 1px solid #eee;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
 .table thead tr th {
   text-align: left;
 }
@@ -45,7 +65,8 @@ tbody tr td:first-child span {
 }
 
 tbody tr td:last-child a,
-.table > a {
+.table a.button,
+button[type="submit"] {
   background-color: var(--primary-color);
   padding: 8px 16px;
   text-decoration: none;
@@ -53,15 +74,18 @@ tbody tr td:last-child a,
   color: white;
   font-size: 12px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
-.table > a {
-  margin-bottom: 16px;
-  display: inline-block;
+.table a.button {
+  width: 120px;
+  text-align: center;
 }
 
-tbody tr td:last-child a:hover {
+a:hover,
+button:hover {
   opacity: 0.9;
+  transition: 300ms;
 }
 
 .table thead tr th:last-child,
