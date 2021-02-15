@@ -1,0 +1,42 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/styles/index.css">
+
+  <title>Class Manager - Professores</title>
+{% endblock head %}
+
+{% block content %}
+  <div class="card table">
+    <a href="/professores/novo">Novo</a>
+
+    <table width="100%">
+      <thead>
+        <tr>
+          <th>Professor</th>
+          <th>Acompanhamento</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {% for teacher in teachers %}
+          <tr>
+            <td>
+              <span style="background-image: url({{ teacher.avatar_url }})"></span>
+              {{ teacher.name }}
+            </td>
+            <td>
+              {% for service in teacher.services %}
+                <span>{{ service }}</span>
+              {% endfor %}
+            </td>
+            <td>
+              <a href="/professores/{{ teacher.id }}">Ver</a>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock content %}
