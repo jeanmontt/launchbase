@@ -75,6 +75,7 @@ tbody tr td:nth-child(2) span {
 
 tbody tr td:last-child a,
 .table a.button,
+.table > a,
 button[type="submit"] {
   background-color: var(--primary-color);
   padding: 8px 16px;
@@ -88,6 +89,11 @@ button[type="submit"] {
 .table a.button {
   width: 120px;
   text-align: center;
+}
+
+.table > a {
+  margin-bottom: 16px;
+  display: inline-block;
 }
 
 tbody tr td:last-child a:hover {
