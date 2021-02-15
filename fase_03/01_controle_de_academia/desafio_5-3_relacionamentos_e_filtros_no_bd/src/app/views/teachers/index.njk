@@ -8,13 +8,29 @@
 
 {% block content %}
   <div class="card table">
-    <a href="/professores/novo">Novo</a>
+    <div class="header">
+      <a class="button" href="/professores/novo">Novo</a>
+      
+
+      <form action="/professores" method="GET">
+        <input 
+          type="text" 
+          name="filter"
+          placeholder="Nome ou acompanhamento" 
+          value="{{ filter }}"
+        >
+
+        <button type="submit">Filtrar</button>
+      </form>
+    </div>
+
 
     <table width="100%">
       <thead>
         <tr>
           <th>Professor</th>
           <th>Acompanhamento</th>
+          <th>Alunos</th>
           <th>Ação</th>
         </tr>
       </thead>
@@ -31,6 +47,7 @@
                 <span>{{ service }}</span>
               {% endfor %}
             </td>
+            <td>{{ teacher.total_students }}</td>
             <td>
               <a href="/professores/{{ teacher.id }}">Ver</a>
             </td>
