@@ -37,7 +37,7 @@
 - [Refatorando aplicação e configurando o BD](https://github.com/jeanmontt/launchbase/tree/master/fase_03/01_controle_de_academia/desafio_5-1_refatorando_aplicacao_e_config_bd) ✔️
 - [Interagindo com o BD](https://github.com/jeanmontt/launchbase/tree/master/fase_03/01_controle_de_academia/desafio_5-2_interagindo_com_bd) ✔️
 - [Relacionamentos e filtros no BD](https://github.com/jeanmontt/launchbase/tree/master/fase_03/01_controle_de_academia/desafio_5-3_relacionamentos_e_filtros_no_bd) ✔️
-- Paginação de resultados no BD 🚧️
+- [Paginação de resultados no BD](https://github.com/jeanmontt/launchbase/tree/master/fase_03/01_controle_de_academia/desafio_5-4_paginacao_de_resultados_bd) 🚧️
 
 #### - Challenge: Persistindo Dados do Foodfy 👨‍🍳️ 🚧️
 
