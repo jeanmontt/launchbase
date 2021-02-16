@@ -1,0 +1,10 @@
+.details button[type="submit"] {
+  width: 49%;
+  float: left;
+}
+
+#form_delete button[type="submit"] {
+  margin-top: 32px;
+  background-color: lightcoral;
+  width: 49%;
+}
