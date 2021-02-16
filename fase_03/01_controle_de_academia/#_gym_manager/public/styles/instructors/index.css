@@ -1,5 +1,6 @@
 .table {
-  display: block;
+  display: grid;
+  grid-template: 64px 1fr 16px / 1fr;
   padding: 40px;
   box-sizing: border-box;
 }
@@ -12,7 +13,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin-bottom: 32px;
+  align-self: start;
 }
 
 .table form {
@@ -91,4 +92,25 @@ button:hover {
 .table thead tr th:last-child,
 td:last-child {
   text-align: center;
+}
+
+.table .pagination {
+  justify-self: center;
+}
+
+.pagination a,
+.pagination span {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+.pagination a:last-child {
+  margin-right: 0;
+}
+
+.pagination a:hover {
+  filter: brightness(0.3);
+  border-bottom: 1px solid var(--primary-color);
+  transition: 300ms;
 }
