@@ -3,18 +3,37 @@ const Student = require("../models/student");
 
 module.exports = {
   index(req, res) {
-    Student.all((students) => {
-      students = students.map(student => {
-        const newStudent = {
-          ...student,
-          school_year: grade(student.school_year)
-        }
+    let { filter, page, limit } = req.query;
 
-        return newStudent;
-      });
+    page = page || 1;
+    limit = limit || 2;
+    let offSet = limit * (page - 1);
 
-      return res.render("students/index", { students });
-    });
+    const params = {
+      filter,
+      page,
+      limit,
+      offSet,
+      callback(students) {
+        const pagination = {
+          total: students.length == 0 ? students: Math.ceil(students[0].total / limit),
+          page
+        };
+        
+        students = students.map(student => {
+          const newStudent = {
+            ...student,
+            school_year: grade(student.school_year)
+          }
+  
+          return newStudent;
+        });
+
+        return res.render("students/index", { students, pagination, filter });
+      }
+    };
+
+    Student.paginate(params);
   },
 
   create(req, res) {

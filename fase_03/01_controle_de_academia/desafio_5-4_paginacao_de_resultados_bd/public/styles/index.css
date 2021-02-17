@@ -1,5 +1,6 @@
 .table {
-  display: block;
+  display: grid;
+  grid-template: 64px 1fr 16px / 1fr;
   padding: 40px;
   box-sizing: border-box;
 }
@@ -8,7 +9,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin-bottom: 32px;
+  align-self: start;
 }
 
 .table form {
@@ -75,7 +76,6 @@ tbody tr td:nth-child(2) span {
 
 tbody tr td:last-child a,
 .table a.button,
-.table > a,
 button[type="submit"] {
   background-color: var(--primary-color);
   padding: 8px 16px;
@@ -84,6 +84,7 @@ button[type="submit"] {
   color: white;
   font-size: 12px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .table a.button {
@@ -91,16 +92,34 @@ button[type="submit"] {
   text-align: center;
 }
 
-.table > a {
-  margin-bottom: 16px;
-  display: inline-block;
-}
-
-tbody tr td:last-child a:hover {
+tbody tr td:last-child a:hover,
+.table a.button:hover,
+button[type="submit"]:hover {
   opacity: 0.9;
 }
 
 .table thead tr th:last-child,
 td:last-child {
   text-align: center;
+}
+
+.table .pagination {
+  justify-self: center;
+}
+
+.pagination a,
+.pagination span {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+.pagination a:last-child {
+  margin-right: 0;
+}
+
+.pagination a:hover {
+  filter: brightness(0.3);
+  border-bottom: 1px solid var(--primary-color);
+  transition: 300ms;
 }
