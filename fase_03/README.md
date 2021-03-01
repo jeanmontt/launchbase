@@ -39,7 +39,7 @@
 - [Relacionamentos e filtros no BD](https://github.com/jeanmontt/launchbase/tree/master/fase_03/01_controle_de_academia/desafio_5-3_relacionamentos_e_filtros_no_bd) ✔️
 - [Paginação de resultados no BD](https://github.com/jeanmontt/launchbase/tree/master/fase_03/01_controle_de_academia/desafio_5-4_paginacao_de_resultados_bd) ✔️
 
-#### - Challenge: Persistindo Dados do Foodfy 👨‍🍳️ 🚧️
+#### [- Challenge: Persistindo Dados do Foodfy](https://github.com/jeanmontt/foodfy/tree/master/04_challenge-persisting-data-on-foodfy) 👨‍🍳️ ✔️
 
 ---
 
