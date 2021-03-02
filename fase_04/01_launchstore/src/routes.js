@@ -8,7 +8,13 @@ routes.get("/", (req, res) => {
 });
 
 routes.get("/produtos/novo", ProductController.create);
+routes.get("/produtos/:id/editar", ProductController.edit);
 
+routes.post("/produtos", ProductController.post);
+routes.put("/produtos", ProductController.put);
+routes.delete("/produtos", ProductController.delete);
+
+//Alias
 routes.get("/anuncios/novo", (req, res) => {
   return res.redirect("/produtos/novo");
 });

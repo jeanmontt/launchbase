@@ -1,0 +1,37 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/styles/products/create-edit.css">
+  <title>LaunchStore | Editando
+    {{product.name}}</title>
+{% endblock head %}
+
+{% block content %}
+  <section class="container form">
+    <form method="POST" action="/produtos?_method=PUT">
+      <div class="header">
+        <h3>Editando produto:
+          {{product.name}}</h3>
+      </div>
+
+      <div class="fields">
+        {% include "products/fields.njk" %}
+
+        <input type="hidden" name="id" value="{{ product.id }}">
+      </div>
+
+      <button class="button edit" type="submit">Atualizar</button>
+    </form>
+
+    <form id="form_delete" method="post" action="/produtos?_method=DELETE">
+      <input type="hidden" name="id" value="{{ product.id }}">
+
+      <button class="button delete" type="submit">Deletar</button>
+    </form>
+  </section>
+{% endblock content %}
+
+{% block scripts %}
+  <script src="/scripts/masc.js"></script>
+  <script src="/scripts/formDelete.js"></script>
+{% endblock scripts %}
