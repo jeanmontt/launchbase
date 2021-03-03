@@ -1,0 +1,65 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/styles/index.css">
+
+  <title>Class Manager - Alunos</title>
+{% endblock head %}
+
+{% block content %}
+  <div class="card table">
+    <div class="header">
+      <a class="button" href="/alunos/novo">Novo</a>
+      
+
+      <form action="/alunos" method="GET">
+        <input 
+          type="text" 
+          name="filter"
+          placeholder="Nome ou email" 
+          value="{{ filter }}"
+        >
+
+        <button type="submit">Filtrar</button>
+      </form>
+    </div>
+
+    <table width="100%">
+      <thead>
+        <tr>
+          <th>Aluno</th>
+          <th>Email</th>
+          <th>Ano escolar</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {% for student in students %}
+          <tr>
+            <td>
+              <span style="background-image: url({{ student.avatar_url }})"></span>
+              {{ student.name }}
+            </td>
+            <td>{{ student.email }}</td>
+            <td>{{ student.school_year }}</td>
+            <td>
+              <a href="/alunos/{{ student.id }}">Ver</a>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <div 
+      class="pagination"
+      data-page={{pagination.page}}
+      data-total={{pagination.total}}
+      data-filter={{filter}}
+    ></div>
+  </div>
+{% endblock content %}
+
+{% block scripts %}
+  <script src="/scripts/indexPagination.js"></script>
+{% endblock scripts %}

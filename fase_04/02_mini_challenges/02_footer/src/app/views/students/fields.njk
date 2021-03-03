@@ -1,0 +1,91 @@
+<div class="item">
+  <div>Avatar URL</div>
+  <div>
+    <input type="url" name="avatar_url" placeholder="https://" value="{{ student.avatar_url }}">
+  </div>
+</div>
+
+<div class="item">
+  <div>Nome completo</div>
+  <div>
+    <input type="text" name="name" placeholder="Digite o nome completo" value="{{ student.name }}">
+  </div>
+</div>
+
+<div class="item">
+  <div>Email</div>
+  <div>
+    <input type="email" name="email" placeholder="Digite o email" value="{{ student.email }}">
+  </div>
+</div>
+
+<div class="item">
+  <div>Data de nascimento</div>
+  <div>
+    <input type="date" name="birth" value="{{ student.birth }}">
+  </div>
+</div>
+
+<div class="item">
+  <div>Ano escolar</div>
+  <select name="school_year">
+    <option value="5EF" {% if student.school_year == "5EF" %} selected="selected" {% endif %}>
+      5º ano - Ensino fundamental
+    </option>
+    <option value="6EF" {% if student.school_year == "6EF" %} selected="selected" {% endif %}>
+      6º ano - Ensino fundamental
+    </option>
+    <option value="7EF" {% if student.school_year == "7EF" %} selected="selected" {% endif %}>
+      7º ano - Ensino fundamental
+    </option>
+    <option value="8EF" {% if student.school_year == "8EF" %} selected="selected" {% endif %}>
+      8º ano - Ensino fundamental
+    </option>
+    <option value="9EF" {% if student.school_year == "9EF" %} selected="selected" {% endif %}>
+      9º ano - Ensino fundamental
+    </option>
+    <option value="1EM" {% if student.school_year == "1EM" %} selected="selected" {% endif %}>
+      1º ano - Ensino médio
+    </option>
+    <option value="2EM" {% if student.school_year == "2EM" %} selected="selected" {% endif %}>
+      2º ano - Ensino médio
+    </option>
+    <option value="3EM" {% if student.school_year == "3EM" %} selected="selected" {% endif %}>
+      3º ano - Ensino médio
+    </option>
+  </select>
+</div>
+
+<div class="item">
+  <div>Tipo de aula</div>
+  <div>
+    <span>
+      <input type="radio" name="class_type" value="À distância" {% if student.class_type == "À distância" %} checked="checked" {% endif %}>
+      À distância
+    </span>
+    <span>
+      <input type="radio" name="class_type" value="Presencial" {% if student.class_type == "Presencial" %} checked="checked" {% endif %}>
+      Presencial
+    </span>
+  </div>
+</div>
+
+<div class="item">
+  <div>Carga horária semanal (horas)</div>
+  <div>
+    <input type="number" name="workload" value="{{ student.workload }}">
+  </div>
+</div>
+
+<div class="item">
+  <div>Professor</div>
+  <select name="teacher">
+    {% for teacher in teacherOptions %}
+      <option value="{{ teacher.id }}" {% if student.teacher_id == teacher.id %} selected="selected" {% endif %}>
+        {{ teacher.name }}
+      </option>
+    {% endfor %}
+  </select>
+</div>
+
+<button type="submit">Salvar</button>
