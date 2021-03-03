@@ -9,9 +9,9 @@
 
     <link rel="stylesheet" href="/styles/main.css">
 
-    {% block head %}{% endblock head %}
-
-    <title>Class Manager</title>
+    {% block head %}
+      <title>Class Manager</title>
+    {% endblock head %}
   </head>
 
   <body>
@@ -21,7 +21,15 @@
         <a href="/alunos">Alunos</a>
       </div>
     </header>
-    {% block content %}{% endblock content %}
+
+    <main>
+      {% block content %}{% endblock content %}
+    </main>
+
+    <footer>
+      <h4>Residencial Acalanto - R. Guilherme Gemballa, 260 - Sala 3 - Jardim América, Rio do Sul - SC, 89160-188</h4>
+      <h4>Rocketseat © 2020 - Todos os direitos reservados</h4>
+    </footer>
 
     <script src="/scripts/addHeaderClass.js"></script>
     {% block scripts %}{% endblock scripts %}

@@ -5,15 +5,24 @@
   --secondary-color: #f1d91c;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   border: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   background-image: url(https://iprofe.com.br/images/bg-school.jpg);
+
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -29,7 +38,7 @@ header {
   font-size: 22px;
 }
 
-.links a + a {
+.links a+a {
   margin-left: 32px;
 }
 
@@ -75,10 +84,35 @@ header {
   animation-delay: 500ms;
 }
 
+footer {
+  margin-top: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 20px 18px;
+
+  background-color: rgb(55, 55, 55);
+}
+
+footer h4 {
+  font-size: 14px;
+  line-break: 24px;
+  font-weight: normal;
+
+  color: white;
+}
+
+footer h4:first-child {
+  margin-bottom: 8px;
+}
+
 @keyframes up {
   from {
     transform: translateY(15px);
   }
+
   to {
     opacity: 1;
   }
