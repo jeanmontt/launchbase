@@ -23,7 +23,7 @@
 ## :rocket: Desafios
 
 6. [LaunchStore](https://github.com/jeanmontt/launchbase/tree/master/fase_04/01_launchstore) 🚧️
-- Mini desafios 🚧️
+- [Mini desafios](https://github.com/jeanmontt/launchbase/tree/master/fase_04/02_mini_challenges) ✔️
 
 ---
 
