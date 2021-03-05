@@ -1,5 +1,6 @@
 const {
-  formatPrice
+  formatPrice,
+  date
 } = require("../../lib/utils");
 
 const Category = require("../models/Category");
@@ -42,7 +43,35 @@ module.exports = {
     }));
     await Promise.all(filesPromise);
 
-    return res.redirect(`/produtos/${productId}/editar`);
+    return res.redirect(`/produtos/${productId}`);
+  },
+
+  async show(req, res) {
+
+    let result = await Product.find(req.params.id);
+    const product = result.rows[0];
+
+    if (!product) return res.send("Product not found!");
+
+    const {
+      day,
+      month,
+      year,
+      hour,
+      minutes
+    } = date(product.updated_at);
+
+    product.published = {
+      date: `${day}/${month}/${year}`,
+      hour: `${hour}h${minutes}`
+    };
+
+    product.price = formatPrice(product.price);
+    product.oldPrice = formatPrice(product.old_price);
+
+    return res.render("products/show", {
+      product
+    });
   },
 
   async edit(req, res) {
@@ -111,7 +140,7 @@ module.exports = {
 
     await Product.update(req.body);
 
-    return res.redirect(`/produtos/${req.body.id}/editar`);
+    return res.redirect(`/produtos/${req.body.id}`);
   },
 
   async delete(req, res) {
