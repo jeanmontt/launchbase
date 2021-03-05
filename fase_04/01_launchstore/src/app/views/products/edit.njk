@@ -8,7 +8,7 @@
 
 {% block content %}
   <section class="container form">
-    <form method="POST" action="/produtos?_method=PUT">
+    <form method="POST" action="/produtos?_method=PUT" enctype="multipart/form-data">
       <div class="header">
         <h3>Editando produto:
           {{product.name}}</h3>

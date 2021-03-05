@@ -1,4 +1,6 @@
 const express = require('express');
+const multer = require('./app/middlewares/multer');
+
 const ProductController = require('./app/controllers/ProductController');
 
 const routes = express.Router();
@@ -10,8 +12,8 @@ routes.get("/", (req, res) => {
 routes.get("/produtos/novo", ProductController.create);
 routes.get("/produtos/:id/editar", ProductController.edit);
 
-routes.post("/produtos", ProductController.post);
-routes.put("/produtos", ProductController.put);
+routes.post("/produtos", multer.array("photos", 6), ProductController.post);
+routes.put("/produtos", multer.array("photos", 6), ProductController.put);
 routes.delete("/produtos", ProductController.delete);
 
 //Alias
