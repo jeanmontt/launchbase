@@ -13,7 +13,7 @@ const Mask = {
       currency: 'BRL' //R$
     }).format(value / 100);
   }
-}
+};
 
 const PhotosUpload = {
   input: "",
@@ -133,5 +133,21 @@ const PhotosUpload = {
     }
 
     photoDiv.remove();
+  }
+};
+
+const ImageGallery = {
+  highlight: document.querySelector('.gallery .highlight > img'),
+  previews: document.querySelectorAll('.preview img'),
+
+  setImage(event) {
+    const {
+      target
+    } = event;
+
+    ImageGallery.previews.forEach(preview => preview.classList.remove('active'));
+    target.classList.add('active');
+
+    ImageGallery.highlight.src = target.src;
   }
 };

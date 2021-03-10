@@ -18,8 +18,40 @@
   width: 100%;
 }
 
-.product-single .gallery img {
+.product-single .highlight>img {
   width: 100%;
+  height: 280px;
+
+  object-fit: none;
+  object-position: 50% 50%;
+
+  border: 1px solid #efefef;
+
+  cursor: zoom-in;
+}
+
+.product-single .preview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.product-single .preview img {
+  height: 100px;
+  width: 100%;
+
+  object-fit: cover;
+
+  opacity: 0.6;
+
+  cursor: pointer;
+
+  transition: opacity 250ms;
+}
+
+.product-single .preview img:hover,
+.product-single .preview img.active {
+  opacity: 1;
 }
 
 .product-single .info {
